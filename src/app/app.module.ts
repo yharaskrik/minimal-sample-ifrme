@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { InIframeComponent } from './in-iframe/in-iframe.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InIframeComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    InIframeComponent
+  ]
 })
 export class AppModule { }
